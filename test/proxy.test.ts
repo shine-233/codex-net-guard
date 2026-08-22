@@ -1,4 +1,4 @@
-import { describe, it, expect, afterAll } from 'vitest';
+import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import * as http from 'node:http';
 import * as net from 'node:net';
 import { createWhitelistProxy } from '../src/index';
