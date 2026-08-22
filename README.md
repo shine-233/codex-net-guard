@@ -20,3 +20,8 @@ startProxy(rules): ProxyHandle
 
 ## 上游同步
 基于 openai/codex@970b7f2ff4f6（Apache-2.0）。季度 diff 由 dsh-codex-ledger CI 触发，见 ledger/coverage.yaml 对应行。
+
+## M5 状态（v0 已实建）
+- ✅ 白名单代理：absolute-form 转发 + CONNECT 隧道拦截 + 域名后缀匹配
+- ✅ 可注入 resolve（测试用本地上游）
+- ⏳ TODO：HTTPS 审计（自签 CA）、token 预算联动 policy-engine 规则文件
